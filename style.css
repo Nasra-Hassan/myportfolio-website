@@ -61,4 +61,37 @@ ul li a:hover {
 }
 .info a {
   font-size: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: rgb(36, 32, 30);
+  margin: 26px 0;
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.4s ease;
+}
+.info span {
+  color: green;
+}
+.info a:hover {
+  background: rgb(59, 174, 209);
+}
+.photo {
+ 
+  width: 30%;
+  height: 60px;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+}
+
+.image img {
+position: absolute;
+height: 140%;
+left: 70%;
+transform: translate(-50%);
+bottom: 0;
+top: 100px;
+
 }
