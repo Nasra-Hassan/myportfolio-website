@@ -12,12 +12,13 @@
   font-family: sans-serif;
 }
 .navbar {
-  width: 86%;
+  width: 80%;
   display: flex;
-  margin: auto;
-  padding: 15px;
+  margin: 20px;
+  padding: 30px;
   align-items: center;
   justify-content: space-between;
+  font-size: larger;
 }
 .logo {
   max-width: 100px;
@@ -37,7 +38,7 @@ ul li {
   padding: 10px 16px;
 }
 ul li a {
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   color: darkslategray;
@@ -52,14 +53,13 @@ ul li a:hover {
   margin-bottom: 20%;
 }
 .info h1 {
-  font-size: 20px;
+  font-size: 30px;
   color: rgb(32, 32, 30);
 }
 .info h3 {
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 1px;
   line-height: 20px;
-
 }
 .info a {
   font-size: 10px;
@@ -71,7 +71,6 @@ ul li a:hover {
   border-radius: 10px;
   display: inline-block;
   transition: 0.4s ease;
-  
 }
 .info span {
   color: green;
@@ -80,27 +79,53 @@ ul li a:hover {
   background: rgb(59, 174, 209);
 }
 .photo {
- 
-  width: 10%;
-  height: 100px;
+  width: 30%;
+  height: 100%;
   position: absolute;
   top: 10%;
-right: 20%;
-margin-top: 10%;
-margin-right: 5%
-}
+  left: 20%;
+  margin-top: 10%;
+  margin-bottom: 30%;
+  margin-left: 50%;
 }
 
 .image img {
-position: absolute;
-height: 140%;
-
-transform: translate(-55%);
-bottom: 0;
-
-
+  position: absolute;
+  height: 50%;
+  bottom: 10%;
+  border-radius: 50%;
 }
 .image:hover .photo {
-  left: 70%
-  
+  left: 10%;
+}
+.skills {
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+
+.skills-carousel {
+  overflow: hidden; /* Hides the scrollbar */
+  width: 100%; /* Or fixed width */
+  border: 2px solid #ccc; /* The 'box' */
+  padding: 10px;
+}
+.skills-container {
+  display: flex; /* Aligns skills horizontally */
+  /* overflow-x: auto; Allows horizontal scrolling */
+  /* scroll-snap-type: x mandatory; Makes items snap into place */
+  gap: 15px;
+  padding-bottom: 10px; /* Space*/
+  margin-left: 10%;
+}
+
+.skill-box {
+  flex: 0 0 auto; /* Prevents items from shrinking */
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  scroll-snap-align: start; /* Snaps on scroll */
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
 }
